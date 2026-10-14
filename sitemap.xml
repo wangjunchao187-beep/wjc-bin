@@ -2,40 +2,40 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/wjcbin.github.io/post/testblog/</loc>
+    <loc>https://wangjunchao187-beep/wjc-bin/post/testblog/</loc>
     <lastmod>2026-10-13T10:03:35+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/wjcbin.github.io/</loc>
+    <loc>https://wangjunchao187-beep/wjc-bin/</loc>
     <lastmod>2026-10-13T10:03:35+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/wjcbin.github.io/post/myfirstblog/</loc>
+    <loc>https://wangjunchao187-beep/wjc-bin/post/myfirstblog/</loc>
     <lastmod>2026-10-13T10:01:23+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/wjcbin.github.io/categories/</loc>
+    <loc>https://wangjunchao187-beep/wjc-bin/categories/</loc>
     <lastmod>2023-03-15T11:00:00-07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/wjcbin.github.io/post/hello/</loc>
+    <loc>https://wangjunchao187-beep/wjc-bin/post/hello/</loc>
     <lastmod>2023-03-15T11:00:00-07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/wjcbin.github.io/tags/hugo/</loc>
+    <loc>https://wangjunchao187-beep/wjc-bin/tags/hugo/</loc>
     <lastmod>2023-03-15T11:00:00-07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/wjcbin.github.io/tags/</loc>
+    <loc>https://wangjunchao187-beep/wjc-bin/tags/</loc>
     <lastmod>2023-03-15T11:00:00-07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/wjcbin.github.io/categories/%E9%9A%8F%E7%AC%94/</loc>
+    <loc>https://wangjunchao187-beep/wjc-bin/categories/%E9%9A%8F%E7%AC%94/</loc>
     <lastmod>2023-03-15T11:00:00-07:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/wjcbin.github.io/post/</loc>
+    <loc>https://wangjunchao187-beep/wjc-bin/post/</loc>
     <lastmod>2022-07-26T21:46:25+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/wjcbin.github.io/archives/</loc>
+    <loc>https://wangjunchao187-beep/wjc-bin/archives/</loc>
     <lastmod>2022-07-26T21:46:25+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/wjcbin.github.io/about/</loc>
+    <loc>https://wangjunchao187-beep/wjc-bin/about/</loc>
     <lastmod>2022-06-09T20:12:52+08:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/wjcbin.github.io/friend/</loc>
+    <loc>https://wangjunchao187-beep/wjc-bin/friend/</loc>
     <lastmod>2022-06-09T20:12:52+08:00</lastmod>
   </url>
 </urlset>
