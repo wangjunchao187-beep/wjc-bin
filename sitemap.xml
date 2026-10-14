@@ -2,10 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://wangjunchao187-beep/wjc-bin/post/testblog/</loc>
-    <lastmod>2026-10-13T10:03:35+08:00</lastmod>
+    <loc>https://wangjunchao187-beep/wjc-bin/post/newtest/123/</loc>
+    <lastmod>2026-10-14T22:09:11+08:00</lastmod>
   </url><url>
     <loc>https://wangjunchao187-beep/wjc-bin/</loc>
+    <lastmod>2026-10-14T22:09:11+08:00</lastmod>
+  </url><url>
+    <loc>https://wangjunchao187-beep/wjc-bin/post/testblog/</loc>
     <lastmod>2026-10-13T10:03:35+08:00</lastmod>
   </url><url>
     <loc>https://wangjunchao187-beep/wjc-bin/post/myfirstblog/</loc>
