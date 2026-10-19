@@ -1,0 +1,695 @@
+<!doctype html>
+<html
+  lang="zh-CN"data-theme-mode="auto"
+>
+  <head><meta charset="utf-8" />
+<meta
+  name="viewport"
+  content="width=device-width, initial-scale=1, shrink-to-fit=no"
+/><title>
+  Detecting | 蓝色天空
+</title>
+<meta name="description" content="少女祈祷中..."/><script>
+  window.siteConfig = JSON.parse("{\"anchor\":{\"auto\":{\"enable\":false,\"length\":60},\"explicit\":{\"enable\":false,\"marker\":\"{#anchor-\",\"prefix\":\"anchor-\"}},\"anchor_icon\":null,\"base\":\"https://wangjunchao187-beep/wjc-bin/\",\"clipboard\":{\"copyright\":{\"count\":50,\"enable\":false,\"license_type\":\"by-nc-sa\"},\"fail\":{\"en\":\"Copy failed (ﾟ⊿ﾟ)ﾂ\",\"ja\":\"コピー失敗 (ﾟ⊿ﾟ)ﾂ\",\"pt-br\":\"Falha ao copiar (ﾟ⊿ﾟ)ﾂ\",\"zh-cn\":\"复制失败 (ﾟ⊿ﾟ)ﾂ\",\"zh-tw\":\"複製失敗 (ﾟ⊿ﾟ)ﾂ\"},\"success\":{\"en\":\"Copy successfully (*^▽^*)\",\"ja\":\"コピー成功 (*^▽^*)\",\"pt-br\":\"Copiado com sucesso (*^▽^*)\",\"zh-cn\":\"复制成功 (*^▽^*)\",\"zh-tw\":\"複製成功 (*^▽^*)\"}},\"code_block\":{\"expand\":true},\"dark_mode\":{\"button\":true,\"mode\":\"auto\"},\"icon_font\":\"4552607_ex15nbittbh\",\"outdate\":{\"daysago\":180,\"enable\":false,\"message\":{\"en\":\"This article was last updated on {time}. Please note that the content may no longer be applicable.\",\"ja\":\"この記事は最終更新日：{time}。記載内容が現在有効でない可能性がありますのでご注意ください。\",\"pt-br\":\"Este artigo foi atualizado pela última vez em {time}. Observe que o conteúdo pode não ser mais aplicável.\",\"zh-cn\":\"本文最后更新于 {time}，请注意文中内容可能已不适用。\",\"zh-tw\":\"本文最後更新於 {time}，請注意文中內容可能已不適用。\"}}}");
+  
+</script>
+<link
+    rel="preload"
+    href="//at.alicdn.com/t/c/font_4552607_ex15nbittbh.woff2"
+    as="font"
+    type="font/woff2"
+    crossorigin="anonymous"
+  /><link rel="stylesheet" href="/wjc-bin/css/loader.min.ac746e154f756f8220326eeb52a719f142ab038be5a8ddf30ea5ef15ef2356ea.css" /><meta property="og:type" content="website" />
+  <meta property="og:title" content="Detecting | 蓝色天空" />
+  <meta
+    property="og:description"
+    content="少女祈祷中..."
+  />
+  <meta property="og:url" content="https://wangjunchao187-beep/wjc-bin/post/%E8%AE%BA%E6%96%87%E5%88%86%E4%BA%AB/detecting/" />
+  <meta
+    property="og:site_name"
+    content="网络安全技术"
+  />
+  <meta property="og:image" content="https://wangjunchao187-beep/wjc-bin/images/banner.webp" />
+  <meta property="article:author" content="蓝色天空" />
+  <meta property="article:published_time" content="2026-10-18T13:44:37&#43;08:00" />
+  <meta property="article:modified_time" content="2026-10-18T13:44:37&#43;08:00" /><meta name="twitter:card" content="summary" /><meta name="twitter:image" content="https://wangjunchao187-beep/wjc-bin/images/banner.webp" />
+<link rel="shortcut icon" href="/wjc-bin/favicon.ico"><link rel="stylesheet" href="/wjc-bin/css/main.min.4b6c51ee95b18012db3d937026e766f623170a3d683b55d23509f745454f61d9.css" /><link
+    rel="preload"
+    as="style"
+    href="https://npm.webcache.cn/photoswipe@5.4.4/dist/photoswipe.css"
+    integrity="sha384-IfxC36XL/toUyJ939C73PcgMuRzAZuIzZxE38drsmO5p6jD7ei&#43;Zx/1oA/0l8ysE" crossorigin="anonymous"
+    onload="this.onload=null;this.rel='stylesheet'"
+  /><link
+    rel="preload"
+    as="style"
+    href="https://npm.webcache.cn/katex@0.16.47/dist/katex.min.css"
+    integrity="sha384-nH0MfJ44wi1dd7w6jinlyBgljjS8EJAh2JBoRad8a3VDw2K69vfaaqm4WnR&#43;gXtA" crossorigin="anonymous"
+    onload="this.onload=null;this.rel='stylesheet'"
+  /><script
+    src="https://npm.webcache.cn/pace-js@1.2.4/pace.min.js"
+    
+    
+    
+    
+    integrity="sha384-k6YtvFUEIuEFBdrLKJ3YAUbBki333tj1CSUisai5Cswsg9wcLNaPzsTHDswp4Az8" crossorigin="anonymous"></script><link
+    rel="stylesheet"
+    href="https://npm.webcache.cn/@reimujs/aos@0.1.3/dist/aos.css"
+    integrity="sha384-GMRP93c6Hkz9JVKGAuRR3nTS7M07RwPgTFenXiosjq2VbVgvdDNcz1g6Mkj8AONa" crossorigin="anonymous"/></head>
+  <body><div id='loader'>
+    <div class="loading-left-bg loading-bg"></div>
+    <div class="loading-right-bg loading-bg"></div>
+    <div class="spinner-box">
+      <div class="loading-taichi rotate"><svg width="150" height="150" viewBox="0 0 1024 1024" class="icon" version="1.1" xmlns="https://www.w3.org/2000/svg" shape-rendering="geometricPrecision">
+            <path d="M303.5 432A80 80 0 0 1 291.5 592A80 80 0 0 1 303.5 432z" fill="var(--red-1, #ff5252)" />
+            <path d="M512 65A447 447 0 0 1 512 959L512 929A417 417 0 0 0 512 95A417 417 0 0 0 512 929L512 959A447 447 0 0 1 512 65z 
+          M512 95A417 417 0 0 1 929 512A208.5 208.5 0 0 1 720.5 720.5L720.5 592A80 80 0 0 0 720.5 432A80 80 0 0 0 720.5 592L720.5 720.5A208.5 208.5 0 0 1 512 512A208.5 208.5 0 0 0 303.5 303.5A208.5 208.5 0 0 0 95 512A417 417 0 0 1 512 95z" fill="var(--red-1, #ff5252)" />
+          </svg></div><div class="loading-word">少女祈祷中...</div>
+    </div>
+  </div>
+  </div>
+  <script>
+    var time = null;
+    var loaderEl = document.getElementById('loader');
+    var startLoading = () => {
+      time = Date.now();
+      loaderEl.classList.remove("loading");
+    }
+    var hideLoader = () => {
+      document.body.style.overflow = 'auto';
+      loader.classList.add('loading');
+    };
+
+    var endLoading = () => {
+      if (!time) {
+        hideLoader();
+      } else {
+        if (Date.now() - time > 500) {
+          time = null;
+          hideLoader();
+        } else {
+          setTimeout(endLoading, 500 - (Date.now() - time));
+          time = null;
+        }
+      }
+    }
+    window.addEventListener('DOMContentLoaded', endLoading);
+    loaderEl.addEventListener('click', endLoading);
+  </script><div id="copy-tooltip"></div>
+<div id="lang-tooltip">
+本文章没有找到对应的语言版本
+</div>
+<div id="heatmap-tooltip"></div><div id="container">
+      <div id="wrap"><div id="header-nav">
+  <nav id="main-nav" aria-label="Primary navigation"><a class="main-nav-link-wrap" href="/wjc-bin/"><div class='main-nav-icon icon rotate'>&#xe62b;</div><span class="main-nav-link">首页</span>
+      </a><a class="main-nav-link-wrap" href="/wjc-bin/archives"><div class='main-nav-icon icon rotate'>&#xe62b;</div><span class="main-nav-link">归档</span>
+      </a><a class="main-nav-link-wrap" href="/wjc-bin/about"><div class='main-nav-icon icon rotate'>&#xe62b;</div><span class="main-nav-link">关于</span>
+      </a><a class="main-nav-link-wrap" href="/wjc-bin/friend"><div class='main-nav-icon icon rotate'>&#xe62b;</div><span class="main-nav-link">友链</span>
+      </a><a id="main-nav-toggle" class="nav-icon" aria-label="Toggle navigation" role="button"></a>
+  </nav>
+  <nav id="sub-nav" aria-label="Secondary navigation"></nav></div>
+<header id="header" aria-label="Site header"><picture></picture><img  fetchpriority="high" src="/wjc-bin/images/banner.webp" alt="Detecting"><div id="header-outer">
+    <div id="header-title"><span id="logo">
+            <h1 data-aos="slide-up">Detecting</h1>
+          </span><h2 id="subtitle-wrap" data-aos="slide-down"></h2></div>
+  </div>
+</header><div id="content"
+          aria-label="Page content"
+          
+          class="sidebar-right"  ><aside id="sidebar" aria-label="Sidebar"><div class="sidebar-wrapper-container sticky"><div class="sidebar-wrapper">
+    <div
+      class="sidebar-wrap"
+      data-aos="fade-up"
+    ><div class="sidebar-toc-sidebar"><h3 class="toc-title">文章目录</h3>
+<div class="sidebar-toc-wrapper toc-div-class">
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#1研究背景">1、研究背景</a></li>
+    <li><a href="#2论文的三个主要贡献">2、论文的三个主要贡献</a></li>
+    <li><a href="#论文论述的四大技术路线">论文论述的四大技术路线</a>
+      <ul>
+        <li><a href="#基于仿真的测试">①基于仿真的测试</a></li>
+        <li><a href="#自动化代码分析">②自动化代码分析</a></li>
+        <li><a href="#-网络模糊测试">③ 网络模糊测试</a></li>
+        <li><a href="#-人工逆向工程">④ 人工逆向工程</a></li>
+      </ul>
+    </li>
+    <li><a href="#论文主要结论与技术局限">论文主要结论与技术局限</a></li>
+    <li><a href="#启发">启发</a></li>
+  </ul>
+</nav>
+</div></div>
+          <div class="sidebar-common-sidebar hidden"><div class="sidebar-author">
+  <img
+    data-src="/wjc-bin/avatar/avatar.png"
+    data-sizes="auto"
+    alt="蓝色天空"
+    class="lazyload"
+  />
+  <div class="sidebar-author-name">蓝色天空</div>
+  <div class="sidebar-description">少女祈祷中...</div>
+</div>
+<div class="sidebar-state">
+  <div class="sidebar-state-article">
+    <div>文章</div><div class="sidebar-state-number">2</div>
+  </div>
+  <a class="sidebar-state-category" href="/wjc-bin/categories/" aria-label="sidebar-state-category-link">
+    <div>分类</div>
+    <div class="sidebar-state-number">
+      1
+    </div>
+  </a>
+  <a class="sidebar-state-tag" href="/wjc-bin/tags/" aria-label="sidebar-state-tag-link">
+    <div>标签</div>
+    <div class="sidebar-state-number">1</div>
+  </a>
+</div>
+<div class="sidebar-social" ></div><div class="sidebar-menu"><div class="sidebar-menu-link-wrap">
+      <a
+        class="sidebar-menu-link-dummy"
+        href="/wjc-bin/"
+        aria-label="首页"
+      ></a><div class='sidebar-menu-icon icon rotate'>&#xe62b;</div><div class="sidebar-menu-link">首页</div>
+    </div><div class="sidebar-menu-link-wrap">
+      <a
+        class="sidebar-menu-link-dummy"
+        href="/wjc-bin/archives"
+        aria-label="归档"
+      ></a><div class='sidebar-menu-icon icon rotate'>&#xe62b;</div><div class="sidebar-menu-link">归档</div>
+    </div><div class="sidebar-menu-link-wrap">
+      <a
+        class="sidebar-menu-link-dummy"
+        href="/wjc-bin/about"
+        aria-label="关于"
+      ></a><div class='sidebar-menu-icon icon rotate'>&#xe62b;</div><div class="sidebar-menu-link">关于</div>
+    </div><div class="sidebar-menu-link-wrap">
+      <a
+        class="sidebar-menu-link-dummy"
+        href="/wjc-bin/friend"
+        aria-label="友链"
+      ></a><div class='sidebar-menu-icon icon rotate'>&#xe62b;</div><div class="sidebar-menu-link">友链</div>
+    </div></div></div><div class="sidebar-btn-wrapper" style="position:static">
+            <div class="sidebar-toc-btn current"></div>
+            <div class="sidebar-common-btn"></div>
+          </div></div>
+  </div><div class="sidebar-widget"></div></div></aside>
+<section id="main" aria-label="Main content"><article
+  class="h-entry article"
+  itemscope
+  itemtype="https://schema.org/BlogPosting"
+>
+  <div
+    class="article-inner"
+    data-aos="fade-up"
+  >
+    <div class="article-meta"><div class="article-date">
+  <span
+    class="article-date-link icon-calendar"
+    data-aos="zoom-in"
+  >
+    <time datetime="2026-10-18 13:44:37 &#43;0800 &#43;0800" itemprop="datePublished"
+      >2026-10-18</time
+    >
+    <time style="display: none;" id="post-update-time"
+      >2026-10-18</time
+    >
+  </span></div>
+</div><div class="hr-line"></div><div class="e-content article-entry" itemprop="articleBody"><h1 id="论文基本信息与核心贡献">
+<a class="header-anchor" href="#%e8%ae%ba%e6%96%87%e5%9f%ba%e6%9c%ac%e4%bf%a1%e6%81%af%e4%b8%8e%e6%a0%b8%e5%bf%83%e8%b4%a1%e7%8c%ae"></a>
+论文基本信息与核心贡献
+</h1><table>
+	<thead>
+			<tr>
+					<th>项目</th>
+					<th>内容</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td>论文题目</td>
+					<td>Detecting Vulnerability on IoT Device Firmware: A Survey</td>
+			</tr>
+			<tr>
+					<td>作者</td>
+					<td>Xiaotao Feng 等</td>
+			</tr>
+			<tr>
+					<td>发表期刊</td>
+					<td>IEEE/CAA Journal of Automatica Sinica（国际顶刊）</td>
+			</tr>
+			<tr>
+					<td>发表时间</td>
+					<td>2023 年 1 月</td>
+			</tr>
+			<tr>
+					<td>论文类型</td>
+					<td>综述论文（Survey）</td>
+			</tr>
+			<tr>
+					<td>研究对象</td>
+					<td>IoT 设备固件漏洞检测</td>
+			</tr>
+			<tr>
+					<td>核心内容</td>
+					<td>技术分类、检测挑战、现有解决方案、未来研究方向</td>
+			</tr>
+	</tbody>
+</table>
+<h2 id="1研究背景">
+<a class="header-anchor" href="#1%e7%a0%94%e7%a9%b6%e8%83%8c%e6%99%af"></a>
+1、研究背景
+</h2><p>作者认为，IoT 固件漏洞检测相比传统软件漏洞检测，面临两个根本困难。</p>
+<p>第一，固件运行环境复杂。</p>
+<p>固件往往依赖特定 CPU 架构、操作系统、驱动、内存布局以及外部硬件设备。即使成功提取固件，也不代表能够直接运行和测试。</p>
+<p>第二，固件通常缺少源代码。</p>
+<p>设备厂商通常不公开固件源代码，有些设备甚至限制调试接口，导致传统源代码分析方法难以直接应用。</p>
+<p>因此，研究人员需要同时解决固件获取、二进制程序分析、固件执行环境恢复以及漏洞检测问题。</p>
+<h2 id="2论文的三个主要贡献">
+<a class="header-anchor" href="#2%e8%ae%ba%e6%96%87%e7%9a%84%e4%b8%89%e4%b8%aa%e4%b8%bb%e8%a6%81%e8%b4%a1%e7%8c%ae"></a>
+2、论文的三个主要贡献
+</h2><p>一是总结了三类嵌入式系统，以及 Fuzzing、符号执行、故障注入、二进制提升四项基础技术。</p>
+<p>二是提出了三层分类体系：分析视角（Perspectives）→ 技术挑战（Challenges）→ 解决方案（Solutions）。</p>
+<p>三是总结现有方法的不足，并从自动化仿真、混合分析、设备监控等方面提出未来研究方向。</p>
+<h2 id="论文论述的四大技术路线">
+<a class="header-anchor" href="#%e8%ae%ba%e6%96%87%e8%ae%ba%e8%bf%b0%e7%9a%84%e5%9b%9b%e5%a4%a7%e6%8a%80%e6%9c%af%e8%b7%af%e7%ba%bf"></a>
+论文论述的四大技术路线
+</h2><p>论文 Fig. 2，将固件漏洞检测划分为四大类。</p>
+<p>①基于仿真的测试：恢复固件执行环境，通过动态测试发现漏洞</p>
+<p>②自动化代码分析：分析二进制代码、控制流和数据流，定位漏洞</p>
+<p>③网络模糊测试：通过网络协议交互，黑盒测试设备</p>
+<p>④人工逆向工程：人工重建程序逻辑，分析具体漏洞场景</p>
+<p><img src="#ZgotmplZ" alt="JAS-2022-0767-2"></p>
+<p>这里要注意：四类方法并不完全互斥。例如仿真框架中可以使用 Fuzzing，静态分析也可以辅助动态测试。这种分类是按照主要分析视角进行的，而不是按照每种工具使用的全部技术进行划分。</p>
+<h3 id="基于仿真的测试">
+<a class="header-anchor" href="#%e5%9f%ba%e4%ba%8e%e4%bb%bf%e7%9c%9f%e7%9a%84%e6%b5%8b%e8%af%95"></a>
+①基于仿真的测试
+</h3><p>这部分研究的关键问题是：</p>
+<p>如何在缺少真实硬件的情况下，使固件能够运行，并且支持漏洞测试？</p>
+<p>论文将挑战分为以下四种。</p>
+<table>
+	<thead>
+			<tr>
+					<th>挑战</th>
+					<th>代表性解决方法</th>
+					<th>代表工作</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td>固件获取困难</td>
+					<td>在线下载、网络更新流量捕获</td>
+					<td>固件采集相关工作</td>
+			</tr>
+			<tr>
+					<td>外部硬件依赖</td>
+					<td>部分仿真、完整仿真</td>
+					<td>Avatar、Firmadyne</td>
+			</tr>
+			<tr>
+					<td>大规模自动化测试</td>
+					<td>自动修复仿真失败、外设建模</td>
+					<td>FirmAE、P2IM、HALucinator</td>
+			</tr>
+			<tr>
+					<td>仿真环境中的漏洞检测</td>
+					<td>Fuzzing、符号执行、故障注入</td>
+					<td>FIRM-AFL、FirmFuzz、IFIZZ</td>
+			</tr>
+	</tbody>
+</table>
+<p>其中最值得理解的是 Partial Emulation 与 Full Emulation 的区别。</p>
+<p>部分仿真允许固件在仿真器中执行，但将外设访问转发给真实设备；完整仿真则尝试在虚拟环境中提供固件执行所需要的硬件行为，不必在测试期间依赖真实设备。</p>
+<p>这一类技术的核心矛盾是：固件仿真越接近真实硬件，往往越复杂；<strong>为了提升自动化程度而抽象或替代硬件行为，又可能引入执行语义偏差。这个矛盾非常值得深入研究。</strong></p>
+<h3 id="自动化代码分析">
+<a class="header-anchor" href="#%e8%87%aa%e5%8a%a8%e5%8c%96%e4%bb%a3%e7%a0%81%e5%88%86%e6%9e%90"></a>
+②自动化代码分析
+</h3><p>这部分研究的核心问题是：</p>
+<p>在没有源代码、程序架构不同、漏洞类型复杂的情况下，如何自动识别固件中的潜在漏洞？</p>
+<p>论文讨论了三方面挑战。</p>
+<table>
+	<thead>
+			<tr>
+					<th>挑战</th>
+					<th>解决思路</th>
+					<th>代表工作</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td>缺少源代码</td>
+					<td>直接分析二进制程序</td>
+					<td>BinArm、FirmUP</td>
+			</tr>
+			<tr>
+					<td>不同 CPU 架构</td>
+					<td>CFG 特征、函数嵌入、中间表示</td>
+					<td>DiscovRE、Genius、Gemini</td>
+			</tr>
+			<tr>
+					<td>漏洞类型与场景复杂</td>
+					<td>污点分析、程序切片、定制规则</td>
+					<td>KARONTE、SaTC、Firmalice</td>
+			</tr>
+	</tbody>
+</table>
+<p>其中两条技术路线值得重点区分。</p>
+<p><strong>第一条</strong>：基于相似性的漏洞检测。</p>
+<p>利用 CFG、指令特征或者神经网络生成的函数向量，对比已知漏洞代码与目标固件中的函数，寻找可能具有相同漏洞的程序片段。</p>
+<p>其优势是能够复用已知漏洞知识，适合规模化检索；不足是对未知漏洞以及显著不同的实现可能不够有效。</p>
+<p><strong>第二条</strong>：基于程序语义和数据流的漏洞检测。</p>
+<p>例如通过污点分析追踪用户输入是否到达危险操作，通过符号执行判断是否存在触发漏洞的可满足条件。</p>
+<p>它不一定要求事先具有某个已知漏洞模板，但容易受到程序分析精度、函数调用关系恢复和路径复杂度的影响。</p>
+<h4 id="需要重点关注的两篇论文">
+<a class="header-anchor" href="#%e9%9c%80%e8%a6%81%e9%87%8d%e7%82%b9%e5%85%b3%e6%b3%a8%e7%9a%84%e4%b8%a4%e7%af%87%e8%ae%ba%e6%96%87"></a>
+需要重点关注的两篇论文
+</h4><p><strong>KARONTE（2020）</strong></p>
+<p>解决跨二进制文件的数据流跟踪问题。IoT 服务可能由多个程序相互协作完成，因此只分析单个可执行文件可能丢失数据传播关系。</p>
+<p>KARONTE 尝试利用进程间通信机制识别组件之间的数据流，进行跨二进制污点分析。</p>
+<p><strong>SaTC（2021）</strong></p>
+<p>利用 Web 前端与后端程序共享的输入关键词，辅助定位后端二进制中的用户输入处理逻辑，再通过数据流分析检测危险操作。</p>
+<p>这意味着研究人员可以使用固件中已有的字符串、关键词等线索，减少完全依赖复杂静态程序分析的成本。</p>
+<p>这两篇论文都涉及输入定位或污点传播问题，但采用不同的分析证据与技术策略。对FirmAgent有参考意义。</p>
+<h3 id="-网络模糊测试">
+<a class="header-anchor" href="#-%e7%bd%91%e7%bb%9c%e6%a8%a1%e7%b3%8a%e6%b5%8b%e8%af%95"></a>
+③ 网络模糊测试
+</h3><p>这部分的核心问题是：</p>
+<p>如果拿不到固件、不能插桩，也无法恢复执行环境，能否直接通过网络接口发现漏洞？</p>
+<p>其主要优点是不要求固件源代码或完整仿真环境。</p>
+<p>但论文指出三个关键困难：</p>
+<table>
+	<thead>
+			<tr>
+					<th>挑战</th>
+					<th>问题原因</th>
+					<th>典型解决思路</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td>输入生成</td>
+					<td>通信协议与消息顺序具有约束</td>
+					<td>协议建模、App 辅助、消息推断</td>
+			</tr>
+			<tr>
+					<td>缺少反馈</td>
+					<td>无法直接获得内部代码覆盖率</td>
+					<td>分析设备响应，构造替代反馈</td>
+			</tr>
+			<tr>
+					<td>状态监控</td>
+					<td>难以判断程序异常及设备崩溃</td>
+					<td>心跳检测、日志、设备状态监控</td>
+			</tr>
+	</tbody>
+</table>
+<p>其中 Snipuzz（2021） 值得重点研究。</p>
+<p>其核心思想是，通过修改输入消息中的部分内容、观察设备响应，推断各个消息片段的作用，再以片段为单位进行变异。</p>
+<p>这里的关键不是简单增加变异数量，而是在缺乏代码覆盖率信息时，利用外部可观察行为指导输入生成。</p>
+<p>不过要注意，设备响应相同并不意味着内部执行路径必然相同，因此响应反馈并不能直接等价于准确的代码覆盖率信息。</p>
+<h3 id="-人工逆向工程">
+<a class="header-anchor" href="#-%e4%ba%ba%e5%b7%a5%e9%80%86%e5%90%91%e5%b7%a5%e7%a8%8b"></a>
+④ 人工逆向工程
+</h3><p>论文主要通过打印机、医疗设备、蓝牙设备、智能网联汽车等案例，说明人工逆向工程仍然能够发现复杂漏洞。这类方法的优势是可以分析特定设备中的复杂逻辑与攻击链，但问题也非常明显：分析过程依赖专业人员，工作量大，难以规模化。因此，对人工逆向工程的自动化辅助，也可以看作一个有价值的长期研究主题。</p>
+<h2 id="论文主要结论与技术局限">
+<a class="header-anchor" href="#%e8%ae%ba%e6%96%87%e4%b8%bb%e8%a6%81%e7%bb%93%e8%ae%ba%e4%b8%8e%e6%8a%80%e6%9c%af%e5%b1%80%e9%99%90"></a>
+论文主要结论与技术局限
+</h2><p>作者归纳了四项主要局限，并提出三类后续方向。</p>
+<table>
+	<thead>
+			<tr>
+					<th>现有局限</th>
+					<th>作者提出的研究方向</th>
+			</tr>
+	</thead>
+	<tbody>
+			<tr>
+					<td>外设仿真依赖特定硬件、架构和人工配置</td>
+					<td>Automatic Emulation</td>
+			</tr>
+			<tr>
+					<td>自动代码分析存在误报，人工验证开销高</td>
+					<td>Hybrid Approach</td>
+			</tr>
+			<tr>
+					<td>黑盒网络测试缺少可靠的内部反馈</td>
+					<td>Multiple Ways to Monitor</td>
+			</tr>
+			<tr>
+					<td>人工逆向分析工作量大、难以规模化</td>
+					<td>提升分析自动化程度（讨论中的需求）</td>
+			</tr>
+	</tbody>
+</table>
+<p>其中最重要的是 Hybrid Approach（混合分析）。</p>
+<p>因为静态分析、动态测试和符号执行各自都有明确局限。例如：</p>
+<ul>
+<li>静态分析可以覆盖没有执行过的代码，但可能产生不可达路径和误报。</li>
+<li>动态测试可以获得真实的执行证据，但受到执行环境和测试覆盖率约束。</li>
+<li>符号执行能够求解路径约束，但可能遇到路径爆炸和环境建模困难。</li>
+</ul>
+<p>三者结合并不意味着简单地把工具串联起来，更重要的是建立有效的信息交互机制。</p>
+<p>例如，静态分析可以为 Fuzzing 提供目标；Fuzzing 产生的执行轨迹可以反过来修正静态分析中不准确的调用关系或数据流假设。</p>
+<h2 id="启发">
+<a class="header-anchor" href="#%e5%90%af%e5%8f%91"></a>
+启发
+</h2><p>IoT 固件漏洞挖掘的困难，不仅在于如何检测漏洞，还在于如何获取固件、理解二进制程序、恢复执行环境，以及在有限可观测条件下获得可靠的分析证据。</p>
+<p>它给我们的重要科研启发是：不要仅仅考虑“设计一种更强的漏洞检测算法”，还要考虑整个分析链路中哪个环节限制了漏洞发现能力。</p>
+<p>其中，最值得首先深入的一个问题是：</p>
+<p>既然静态分析存在误报和漏报，而动态分析存在覆盖率与执行环境限制，那么能否利用动态执行证据持续修正静态分析结果，从而提高固件漏洞检测的准确性与覆盖率？</p>
+<p>这是一个能够把这篇综述与 FirmAgent 研究联系起来的切入点。</p>
+</div>
+    <footer class="article-footer"><ul class="article-category-list"></ul>
+<ul class="article-tag-list" itemprop="keywords"></ul>
+</footer>
+  </div><nav
+    id="article-nav"
+    aria-label="Article navigation"
+    data-aos="fade-up"
+  ><div class="article-nav-link-wrap left"><img
+              data-src="https://d-sketon.top/img/_backwebp/bg1.webp"
+              data-sizes="auto"
+              alt="Hello World"
+              class="lazyload"
+            /><a
+          href="/wjc-bin/post/hello/"
+          aria-label="前一篇:Hello World"
+          title="前一篇:Hello World"
+        ></a>
+        <div class="article-nav-caption">前一篇</div>
+        <h3 class="article-nav-title">Hello World</h3>
+      </div></nav></article></section>
+        </div><footer id="footer" aria-label="Site footer">
+  <div style="width: 100%; overflow: hidden">
+    <div class="footer-line"></div>
+  </div>
+  <div id="footer-info"><div>
+      <span class="icon-copyright"></span>2020-2026<span class="footer-info-sep rotate"></span>蓝色天空
+    </div><div>
+        基于&nbsp;<a
+          href="https://gohugo.io/"
+          target="_blank"
+          rel="noopener nofollow noreferrer"
+          >Hugo</a
+        >&nbsp;Theme.<a
+          href="https://github.com/D-Sketon/hugo-theme-reimu"
+          target="_blank"
+          rel="noopener nofollow noreferrer"
+          >Reimu</a
+        >
+      </div><div>
+        <span class="icon-brush"
+          >&nbsp;3.0k</span
+        >
+        &nbsp;|&nbsp;
+        <span class="icon-coffee">&nbsp;00:07</span>
+      </div><div>
+        <span class="icon-eye"></span>
+        <span id="busuanzi_container_site_pv"
+          >总访问量&nbsp;<span
+            id="busuanzi_value_site_pv"
+          ></span
+        ></span>
+        &nbsp;|&nbsp;
+        <span class="icon-user"></span>
+        <span id="busuanzi_container_site_uv"
+          >总访客量&nbsp;<span
+            id="busuanzi_value_site_uv"
+          ></span
+        ></span>
+      </div></div>
+</footer>
+<div class="sidebar-top">
+            <div class="sidebar-top-taichi rotate"></div>
+            <div class="arrow-up"></div>
+          </div><div id="mask" class="hide"></div>
+      </div><nav id="mobile-nav" aria-label="Mobile navigation">
+  <div class="sidebar-wrap"><div class="sidebar-toc-sidebar"><h3 class="toc-title">文章目录</h3>
+<div class="sidebar-toc-wrapper toc-div-class">
+  <nav id="TableOfContents">
+  <ul>
+    <li><a href="#1研究背景">1、研究背景</a></li>
+    <li><a href="#2论文的三个主要贡献">2、论文的三个主要贡献</a></li>
+    <li><a href="#论文论述的四大技术路线">论文论述的四大技术路线</a>
+      <ul>
+        <li><a href="#基于仿真的测试">①基于仿真的测试</a></li>
+        <li><a href="#自动化代码分析">②自动化代码分析</a></li>
+        <li><a href="#-网络模糊测试">③ 网络模糊测试</a></li>
+        <li><a href="#-人工逆向工程">④ 人工逆向工程</a></li>
+      </ul>
+    </li>
+    <li><a href="#论文主要结论与技术局限">论文主要结论与技术局限</a></li>
+    <li><a href="#启发">启发</a></li>
+  </ul>
+</nav>
+</div></div>
+        <div class="sidebar-common-sidebar hidden"><div class="sidebar-author">
+  <img
+    data-src="/wjc-bin/avatar/avatar.png"
+    data-sizes="auto"
+    alt="蓝色天空"
+    class="lazyload"
+  />
+  <div class="sidebar-author-name">蓝色天空</div>
+  <div class="sidebar-description">少女祈祷中...</div>
+</div>
+<div class="sidebar-state">
+  <div class="sidebar-state-article">
+    <div>文章</div><div class="sidebar-state-number">2</div>
+  </div>
+  <a class="sidebar-state-category" href="/wjc-bin/categories/" aria-label="sidebar-state-category-link">
+    <div>分类</div>
+    <div class="sidebar-state-number">
+      1
+    </div>
+  </a>
+  <a class="sidebar-state-tag" href="/wjc-bin/tags/" aria-label="sidebar-state-tag-link">
+    <div>标签</div>
+    <div class="sidebar-state-number">1</div>
+  </a>
+</div>
+<div class="sidebar-social" ></div><div class="sidebar-menu"><div class="sidebar-menu-link-wrap">
+      <a
+        class="sidebar-menu-link-dummy"
+        href="/wjc-bin/"
+        aria-label="首页"
+      ></a><div class='sidebar-menu-icon icon rotate'>&#xe62b;</div><div class="sidebar-menu-link">首页</div>
+    </div><div class="sidebar-menu-link-wrap">
+      <a
+        class="sidebar-menu-link-dummy"
+        href="/wjc-bin/archives"
+        aria-label="归档"
+      ></a><div class='sidebar-menu-icon icon rotate'>&#xe62b;</div><div class="sidebar-menu-link">归档</div>
+    </div><div class="sidebar-menu-link-wrap">
+      <a
+        class="sidebar-menu-link-dummy"
+        href="/wjc-bin/about"
+        aria-label="关于"
+      ></a><div class='sidebar-menu-icon icon rotate'>&#xe62b;</div><div class="sidebar-menu-link">关于</div>
+    </div><div class="sidebar-menu-link-wrap">
+      <a
+        class="sidebar-menu-link-dummy"
+        href="/wjc-bin/friend"
+        aria-label="友链"
+      ></a><div class='sidebar-menu-icon icon rotate'>&#xe62b;</div><div class="sidebar-menu-link">友链</div>
+    </div></div></div></div><div class="sidebar-btn-wrapper">
+        <div class="sidebar-toc-btn current"></div>
+        <div class="sidebar-common-btn"></div>
+      </div></nav>
+</div><script
+    src="https://npm.webcache.cn/lazysizes@5.3.2/lazysizes.min.js"
+    
+    
+    
+    
+    integrity="sha384-3gT/vsepWkfz/ff7PpWNUeMzeWoH3cDhm/A8jM7ouoAK0/fP/9bcHHR5kHq2nf&#43;e" crossorigin="anonymous"></script><script
+    src="https://npm.webcache.cn/clipboard@2.0.11/dist/clipboard.min.js"
+    
+    
+    
+    
+    integrity="sha384-J08i8An/QeARD9ExYpvphB8BsyOj3Gh2TSh1aLINKO3L0cMSH2dN3E22zFoXEi0Q" crossorigin="anonymous"></script><script src="/wjc-bin/js/main.js" integrity="" crossorigin="anonymous"  ></script><script src="/wjc-bin/js/aos.js" integrity="" crossorigin="anonymous"  ></script><script>
+    var aosInit = () => {
+      AOS.init({
+        duration: 1000,
+        easing: "ease",
+        once: true,
+        offset: 50,
+      });
+    };
+    if (document.readyState === "loading") {
+      document.addEventListener("DOMContentLoaded", aosInit);
+    } else {
+      aosInit();
+    }
+  </script><script src="/wjc-bin/js/pjax_main.js" integrity="" crossorigin="anonymous" data-pjax ></script><script>
+  var setupFirework = () => {
+    if (! false  || !window.matchMedia('(max-width: 768px)').matches) {
+      if (window.firework) {
+        const options = JSON.parse("{\"excludeelements\":[\"a\",\"button\"],\"particles\":[{\"colors\":[\"var(--red-1)\",\"var(--red-2)\",\"var(--red-3)\",\"var(--red-4)\"],\"duration\":[1200,1800],\"easing\":\"easeOutExpo\",\"move\":[\"emit\"],\"number\":20,\"shape\":\"circle\",\"shapeOptions\":{\"alpha\":[0.3,0.5],\"radius\":[16,32]}},{\"colors\":[\"var(--red-0)\"],\"duration\":[1200,1800],\"easing\":\"easeOutExpo\",\"move\":[\"diffuse\"],\"number\":1,\"shape\":\"circle\",\"shapeOptions\":{\"alpha\":[0.2,0.5],\"lineWidth\":6,\"radius\":20}}]}");
+        options.excludeElements = options.excludeelements;
+        delete options.excludeelements;
+        window.firework(options);
+      }
+    }
+  }
+</script><script
+    src="https://npm.webcache.cn/mouse-firework@0.2.0/dist/index.umd.js"
+    defer
+    
+    
+    onload="setupFirework()"
+    integrity="sha384-qi9WggRt19tv8Vc7pCHW3ulMNLwrn515zaLEWZjl1px07vz8&#43;pUoWX8n1rgq282T" crossorigin="anonymous"></script>
+
+<div id="lazy-script">
+  <div><script data-pjax>
+        window.REIMU_POST = {
+          author: "蓝色天空",
+          title: "Detecting",
+          url: "https:\/\/wangjunchao187-beep\/wjc-bin\/post\/%E8%AE%BA%E6%96%87%E5%88%86%E4%BA%AB\/detecting\/",
+          description: " 论文基本信息与核心贡献 项目 内容 论文题目 Detecting Vulnerability on IoT Device Firmware: A Survey 作者 Xiaotao Feng 等 发表期刊 IEEE\/CAA Journal of Automatica Sinica（国际顶刊） 发表时间 2023 年 1 月 论文类型 综述论文（Survey） 研究对象 IoT 设备固件漏洞检测 核心内容 技术分类、检测挑战、现有解决方案、未来研究方向 1、研究背景 作者认为，IoT 固件漏洞检测相比传统软件漏洞检测，面临两个根本困难。\n",
+          cover: "https:\/\/wangjunchao187-beep\/wjc-bin\/images\/banner.webp",
+        };
+      </script><script src="/wjc-bin/js/insert_highlight.js" integrity="" crossorigin="anonymous" data-pjax ></script><script src="/wjc-bin/js/tabs.js" integrity="" crossorigin="anonymous" data-pjax defer></script><script type="module" data-pjax>const PhotoSwipeLightbox = (await safeImport("https:\/\/npm.webcache.cn\/photoswipe@5.4.4\/dist\/photoswipe-lightbox.esm.min.js", "sha384-DiL6M\/gG\u002bwmTxmCRZyD1zee6lIhawn5TGvED0FOh7fXcN9B0aZ9dexSF\/N6lrZi\/")).default;const initPswp = (gallery, children) => {
+          if (_$$(`${gallery} ${children}`).length > 0) {
+            new PhotoSwipeLightbox({
+              gallery,
+              children,pswpModule: () => safeImport("https:\/\/npm.webcache.cn\/photoswipe@5.4.4\/dist\/photoswipe.esm.min.js", "sha384-WkkO3GCmgkC3VQWpaV8DqhKJqpzpF9JoByxDmnV8\u002boTJ7m3DfYEWX1fu1scuS4\u002bs")}).init();
+          }
+        }
+        const pswp = () => {
+          initPswp('.article-entry', 'a.article-gallery-item');
+          initPswp('.article-gallery', 'a.article-gallery-item');
+        }
+        pswp()
+      </script></div>
+</div><script
+    src="https://npm.webcache.cn/busuanzi@2.3.0/bsz.pure.mini.js"
+    
+    async
+    
+    
+    integrity="sha384-0M75wtSkhjIInv4coYlaJU83&#43;OypaRCIq2SukQVQX04eGTCBXJDuWAbJet56id&#43;S" crossorigin="anonymous"></script><script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.getRegistrations().then((registrations) => {
+        for (let registration of registrations) {
+          registration.unregister();
+        }
+      });
+    }
+  </script><script>
+  const reimuCopyright = String.raw`
+   ______     ______     __     __    __     __  __    
+  /\  == \   /\  ___\   /\ \   /\ "-./  \   /\ \/\ \   
+  \ \  __<   \ \  __\   \ \ \  \ \ \-./\ \  \ \ \_\ \  
+   \ \_\ \_\  \ \_____\  \ \_\  \ \_\ \ \_\  \ \_____\ 
+    \/_/ /_/   \/_____/   \/_/   \/_/  \/_/   \/_____/ 
+                                                    
+  `;
+  console.log(String.raw`%c ${reimuCopyright}`, "color: #ff5252;");
+  console.log(
+    "%c Theme.Reimu" + " %c https://github.com/D-Sketon/hugo-theme-reimu ",
+    "color: white; background: #ff5252; padding:5px 0;",
+    "padding:4px;border:1px solid #ff5252;",
+  );
+</script></body>
+</html>
